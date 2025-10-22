@@ -11,8 +11,11 @@
   - course.yaml
   tasks:
   - name: Vairable testing
-    vars:
-      NAME: From Task level
+#    vars:
+#      NAME: From Task level
     ansible.builtin.debug:
       msg: "{{ NAME }}"
     
+
+# 1. From comand line
+# 2. 
