@@ -7,8 +7,8 @@
   - name: Variable through prompt 
     prompt: From where are the variables passed?
     private: false
-  vars_files:
-  - course.yaml
+#  vars_files:
+#  - course.yaml
   tasks:
   - name: Vairable testing
 #    vars:
@@ -18,4 +18,5 @@
     
 
 # 1. From comand line
-# 2. 
+# 2. From file level
+# 3. 
