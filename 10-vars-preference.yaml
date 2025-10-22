@@ -4,7 +4,7 @@
 #3  vars:
 #3    NAME: From Play level
   vars_prompt:
-  - name: Variable through prompt 
+  - name: NAME
     prompt: From where are the variables passed?
     private: false
 #2  vars_files:
