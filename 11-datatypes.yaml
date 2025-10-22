@@ -15,5 +15,5 @@
   tasks:
     - name: Print All the variables
       ansible.builtin.debug:
-        msg: "Course: {{ Course }}, Duration: {{ Duration }}, is_live: {{ is_live }}, tools: {{ tools }}, Concepts: {{Concepts}}"
+        msg: "Course: {{ Course }}, Duration: {{ Duration }}, is_live: {{ is_live }}, tools: {{ tools }}, Concepts: {{ concepts }}"
 
