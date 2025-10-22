@@ -3,7 +3,7 @@
   connection: local
   vars:
     NAME: From Play level
-  vars_prompts:
+  vars_prompt:
   - name: Variable through prompt 
     prompt: From where are the variables passed?
     private: false
@@ -11,6 +11,8 @@
   - course.yaml
   tasks:
   - name: Vairable testing
+    vars:
+      NAME: From Task level
     ansible.builtin.debug:
       msg: "{{ NAME }}"
     
