@@ -2,16 +2,16 @@
   hosts: node
   tasks:
   - name: install nginx
-    ansible.buitlin.package:
+    apt:
       name: nginx
       state: present
 
 
   - name: start nginx
-    ansible.buitlin.service:
+    service:
       name: nginx
       state: started
       enabled: yes
 
-      
+
 
