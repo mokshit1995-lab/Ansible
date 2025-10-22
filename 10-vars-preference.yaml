@@ -1,18 +1,18 @@
 - name: Variable preference
   hosts: local
   connection: local
-#  vars:
-#    NAME: From Play level
+#3  vars:
+#3    NAME: From Play level
   vars_prompt:
   - name: Variable through prompt 
     prompt: From where are the variables passed?
     private: false
-#  vars_files:
-#  - course.yaml
+#2  vars_files:
+#2  - course.yaml
   tasks:
   - name: Vairable testing
-#    vars:
-#      NAME: From Task level
+#1    vars:
+#1      NAME: From Task level
     ansible.builtin.debug:
       msg: "{{ NAME }}"
     
@@ -20,4 +20,5 @@
 # 1. From comand line
 # 2. From file level
 # 3. From Play level
-# 4. 
+# 4. From Invertory
+# 5.
