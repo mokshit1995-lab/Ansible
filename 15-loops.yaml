@@ -10,3 +10,16 @@
     - Ramesh
     - Kiran
     - Fani
+
+- name: install packages in loop
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: install packages in loop
+    ansible.builtin.package:
+      name: "{{ item }}"
+    loop:
+    - nginx
+    - mysql
+    - zip
