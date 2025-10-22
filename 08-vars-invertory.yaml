@@ -1,0 +1,7 @@
+- name: Variables from invertory
+  hosts: local
+  connection: local
+  tasks:
+  - name: Print variable names
+    ansible.builtin.debug:
+      msg: "COURSE: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
