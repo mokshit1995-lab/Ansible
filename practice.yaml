@@ -1,2 +1,41 @@
-kjanfkjndf
-jnfsf
+# YAML(Yet Another Markup Language)
+- name: "Mokshit Gunti"
+  dob: "01-01-01"
+  age: 21
+  addresses: 
+  - doorno: 18-3
+    street: "ghandi nagar"
+    City: "Hyderabad"
+    pin: 724734
+    type: "Current"
+
+  - doorno: 18-3
+    street: "ghandi nagar"
+    City: "Hyderabad"
+    pin: 724734
+    type: "Prem"
+  Skills:
+  - java
+  - python
+  - devops
+
+- name: "Ramesh"
+  dob: "01-01-01"
+  age: 21
+  addresses: 
+  - doorno: 18-3
+    street: "ghandi nagar"
+    City: "Hyderabad"
+    pin: 724734
+    type: "Current"
+
+  - doorno: 18-3
+    street: "ghandi nagar"
+    City: "Hyderabad"
+    pin: 724734
+    type: "Prem"
+  Skills:
+  - java
+  - python
+  - devops
+  
