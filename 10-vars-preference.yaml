@@ -3,10 +3,10 @@
   connection: local
 #3  vars:
 #3    NAME: From Play level
-  vars_prompt:
-  - name: NAME
-    prompt: From where are the variables passed?
-    private: false
+#5  vars_prompt:
+#5  - name: NAME
+#5    prompt: From where are the variables passed?
+#5    private: false
 #2  vars_files:
 #2  - course.yaml
   tasks:
@@ -21,4 +21,4 @@
 # 2. From file level
 # 3. From Play level
 # 4. From Invertory
-# 5.
+# 5. From Prompt
