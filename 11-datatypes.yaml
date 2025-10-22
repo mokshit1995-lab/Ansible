@@ -13,6 +13,7 @@
       cloud: AWS
       cm: ansible
   tasks:
+    - name: Print All the variables
     ansible.builtin.debug:
       msg: "Course: {{ Course }}, Duration: {{ Duration }}, is_live: {{ is_live }}, tools: {{ tools }}, Concepts: {{Concepts}}"
-      
+
