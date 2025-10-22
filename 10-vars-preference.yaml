@@ -1,8 +1,8 @@
 - name: Variable preference
   hosts: local
   connection: local
-  vars:
-    NAME: From Play level
+#  vars:
+#    NAME: From Play level
   vars_prompt:
   - name: Variable through prompt 
     prompt: From where are the variables passed?
@@ -16,7 +16,8 @@
     ansible.builtin.debug:
       msg: "{{ NAME }}"
     
-
+# Preferene of variables 
 # 1. From comand line
 # 2. From file level
-# 3. 
+# 3. From Play level
+# 4. 
