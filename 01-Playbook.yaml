@@ -2,5 +2,5 @@
   hosts: node #Which server you are connecting
   #List of task/collection/module
   tasks:
-  - taskname: ping
-    ansible.builtin.ping:
+  - name: ping
+    ping:
