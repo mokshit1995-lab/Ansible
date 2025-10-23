@@ -10,4 +10,4 @@
   
   - name: split list into list
     ansible.builtin.debug:
-      msg: " Technologies are - {{ tech | split(,) }}"
+      msg: " Technologies are - {{ tech | split(',') }}"
