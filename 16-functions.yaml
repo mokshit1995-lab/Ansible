@@ -13,6 +13,11 @@
       value: payment
     - key: Environment
       value: Dev
+  vars_prompt:
+  - name: email
+    prompt: Enter email id
+    private: false
+
   tasks:
   - name: default variable
     ansible.builtin.debug:
@@ -46,11 +51,6 @@
   - name: convert upper to lower
     ansible.builtin.debug:
       msg: "{{ NAME | upper }}"
- 
-  vars_prompt:
-  - name: email
-    prompt: Enter email id
-    private: false
   
   - name: convert email to lower case
     ansible.builtin.debug:
