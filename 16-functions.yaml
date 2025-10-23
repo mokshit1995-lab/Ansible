@@ -3,6 +3,10 @@
   connection: local
   vars:
     tech: devops, linux, shell
+    #Dictionary == map
+    tags:
+      application: payment
+      Environment: Dev
   tasks:
   - name: default variable
     ansible.builtin.debug:
@@ -11,3 +15,7 @@
   - name: split list into list
     ansible.builtin.debug:
       msg: " Technologies are - {{ tech | split(',') }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "Tags are : {{ tags | dict2items }}"
