@@ -72,7 +72,7 @@
 
   - name: redirect the command_output
    # ansible.builtin.command: ls -la > /tmp/outlist.txt 
-    ansible.builtin.command: ls -la > /tmp/outlist.txt 
+    ansible.builtin.shell: ls -la > /tmp/outlist.txt 
     register: outlist
 
   - name: print redirect command_output
