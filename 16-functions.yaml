@@ -1,7 +1,12 @@
 - name: Functions
   hosts: local
   connection: local
+  vars:
+    tech: devops, linux, shell
   tasks:
   - name: default variable
     ansible.builtin.debug:
      msg: "Hello,{{ NAME | default ('Ramesh') }}"
+  - name: split list into list
+    ansible.builtin.debug:
+      msg: " Technologies are - {{tech | split(,) }}"
