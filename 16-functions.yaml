@@ -4,6 +4,7 @@
   vars:
     tech: devops, linux, shell
     NAME: Mokshit
+    ipadd: 12432.13.2141.1242
     #Dictionary == map
     tags:
       application: payment
@@ -55,3 +56,7 @@
   - name: convert email to lower case
     ansible.builtin.debug:
       msg: "{{ email | lower }}"
+
+  - name: Validate ip address
+    ansible.builtin.debug:
+      msg: " {{ ipadd | ansible.utils.ipv4 }}"
