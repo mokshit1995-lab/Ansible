@@ -7,6 +7,7 @@
   - name: default variable
     ansible.builtin.debug:
      msg: "Hello,{{ NAME | default ('Ramesh') }}"
+  
   - name: split list into list
     ansible.builtin.debug:
-      msg: " Technologies are - {{tech | split(,) }}"
+      msg: " Technologies are - {{ tech | split(,) }}"
