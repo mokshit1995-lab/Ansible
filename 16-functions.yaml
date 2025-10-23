@@ -30,7 +30,7 @@
       msg: "List to Map {{ listtags | items2dict }}"
   
   - name: read yaml file
-    ansible.builtin.set_facts:
+    ansible.builtin.set_fact:
       14-facts.yaml: "{{ lookup ('file', '14-facts.yaml') | from_yaml }}"
       
   - name: convert yaml to json
