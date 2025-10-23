@@ -46,3 +46,11 @@
   - name: convert upper to lower
     ansible.builtin.debug:
       msg: "{{ NAME | upper }}"
+
+  - name: email
+    prompt: Enter email id
+    private: false
+  
+  - name: convert email to lower case
+    ansible.builtin.debug:
+      msg: "{{ email | lower }}"
