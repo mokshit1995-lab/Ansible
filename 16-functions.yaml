@@ -60,3 +60,8 @@
   - name: Validate ip address
     ansible.builtin.debug:
       msg: " {{ ipadd | ansible.utils.ipv4 }}"
+
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+    
