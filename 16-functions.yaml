@@ -3,6 +3,7 @@
   connection: local
   vars:
     tech: devops, linux, shell
+    NAME: Mokshit
     #Dictionary == map
     tags:
       application: payment
@@ -41,4 +42,7 @@
     ansible.builtin.copy:
       dest: ./facts.json
       content: "json : {{ fact1 | to_json }}"
-      
+
+  - name: convert upper to lower
+    ansible.builtin.debug:
+      msg: "{{ NAME | upper }}"
