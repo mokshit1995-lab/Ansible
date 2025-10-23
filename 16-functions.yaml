@@ -4,7 +4,7 @@
   vars:
     tech: devops, linux, shell
     NAME: Mokshit
-    ipadd: 0.0.0.0
+    ipadd: 1244.341.2411.4124
     #Dictionary == map
     tags:
       application: payment
