@@ -31,8 +31,8 @@
   
   - name: read yaml file
     ansible.builtin.set_fact:
-      14-facts.yaml: "{{ lookup ('file', '14-facts.yaml') | from_yaml }}"
+      fact1: "{{ lookup ('file', '14-facts.yaml') | from_yaml }}"
       
   - name: convert yaml to json
     ansible.builtin.debug:
-      msg: "json : {{ 14-facts.yaml | to_json }}"
+      msg: "json : {{ fact1 | to_json }}"
